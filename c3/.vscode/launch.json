@@ -1,0 +1,105 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Celsius",
+            "request": "launch",
+            "mainClass": "com.aca.Celsius",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Average",
+            "request": "launch",
+            "mainClass": "com.aca.Average",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display",
+            "request": "launch",
+            "mainClass": "com.aca.Display",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cast",
+            "request": "launch",
+            "mainClass": "com.aca.Cast",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch GuessStarter",
+            "request": "launch",
+            "mainClass": "GuessStarter",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CastOperations",
+            "request": "launch",
+            "mainClass": "com.aca.CastOperations",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CelsiusToFarenheit",
+            "request": "launch",
+            "mainClass": "com.aca.CelsiusToFarenheit",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertInches",
+            "request": "launch",
+            "mainClass": "com.aca.ConvertInches",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Echo",
+            "request": "launch",
+            "mainClass": "com.aca.Echo",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise1",
+            "request": "launch",
+            "mainClass": "com.aca.Exercise1",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScannerBug",
+            "request": "launch",
+            "mainClass": "com.aca.ScannerBug",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SecondConverter",
+            "request": "launch",
+            "mainClass": "com.aca.SecondConverter",
+            "projectName": "c3_79da962c"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStudent",
+            "request": "launch",
+            "mainClass": "com.aca.TestStudent",
+            "projectName": "c3_79da962c"
+        }
+    ]
+}

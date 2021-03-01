@@ -1,0 +1,126 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch LoveJava",
+            "request": "launch",
+            "mainClass": "com.aca.LoveJava",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Precedence",
+            "request": "launch",
+            "mainClass": "com.aca.Precedence",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Condition",
+            "request": "launch",
+            "mainClass": "com.aca.Condition",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Logic",
+            "request": "launch",
+            "mainClass": "com.aca.Logic",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Comparison",
+            "request": "launch",
+            "mainClass": "com.aca.Comparison",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Withdrawal",
+            "request": "launch",
+            "mainClass": "com.aca.Withdrawal",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch DoubleByZero",
+            "request": "launch",
+            "mainClass": "com.aca.DoubleByZero",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntByZero",
+            "request": "launch",
+            "mainClass": "com.aca.IntByZero",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntExtremes",
+            "request": "launch",
+            "mainClass": "com.aca.IntExtremes",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestScore",
+            "request": "launch",
+            "mainClass": "com.aca.TestScore",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch HousePrice",
+            "request": "launch",
+            "mainClass": "com.aca.HousePrice",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Time",
+            "request": "launch",
+            "mainClass": "com.aca.Time",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Date",
+            "request": "launch",
+            "mainClass": "com.aca.Date",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyReport",
+            "request": "launch",
+            "mainClass": "com.aca.MyReport",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arithmetic",
+            "request": "launch",
+            "mainClass": "com.aca.Arithmetic",
+            "projectName": "c2_79da962b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assignment",
+            "request": "launch",
+            "mainClass": "com.aca.Assignment",
+            "projectName": "c2_79da962b"
+        }
+    ]
+}

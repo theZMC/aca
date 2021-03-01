@@ -1,0 +1,14 @@
+package com.aca;
+
+public class Precedence {
+    public static void main(String[] args) {
+        int sum = 32 - 8 + (16 * 2);
+        System.out.println("Default order: \t\t" + sum);
+
+        sum = ( 32 - 8 + 16 ) * 2;
+        System.out.println("Specified order: \t" + sum);
+
+        sum = ( 32 - (8 + 16) ) * 2;
+        System.out.println("Nested specific order: \t" + sum);
+    }
+}

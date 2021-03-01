@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "c5"
+		},
+		{
+			"path": "c4"
+		},
+		{
+			"path": "c3"
+		},
+		{
+			"path": "c2"
+		},
+		{
+			"path": "c1"
+		},
+		{
+			"path": "c6"
+		}
+	],
+	"settings": {
+		"java.dependency.syncWithFolderExplorer": false
+	}
+}

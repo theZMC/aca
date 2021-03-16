@@ -7,26 +7,21 @@ public class CoffeeDiscount {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Do you take a bicycle or a bus to work? (1 for bus, 2 for bicycle) ");
-        boolean isBikeRider = scanner.nextInt() == 2 ? true : false;
+        boolean isBikeRider = scanner.nextInt() == 2;
 
         System.out.print("How many miles is your commute? ");
         int commute = scanner.nextInt();
 
         System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(isBikeRider, commute));
-        
+
         scanner.close();
 
-        // System.out.println("Test Cases:");
-        // System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(true, 20));
-        // System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(true, 30));
-        // System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(true, 52));
-        // System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(false, 35));
-        // System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(false, 50));
+        // runTests();
     }
 
     public static int calcDiscount(boolean isBikeRider, int commute) {
         int discount = 0;
-        
+
         if(commute < 21){
             discount = 100;
         }
@@ -48,5 +43,14 @@ public class CoffeeDiscount {
         }
 
         return discount;
+    }
+
+    public static void runTests() {
+        System.out.println("Test Cases:");
+        System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(true, 20));
+        System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(true, 30));
+        System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(true, 52));
+        System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(false, 35));
+        System.out.printf("You qualify for a %d%% discount.\n", calcDiscount(false, 50));
     }
 }

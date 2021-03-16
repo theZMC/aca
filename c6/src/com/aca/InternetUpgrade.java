@@ -18,6 +18,7 @@ public class InternetUpgrade {
         
         // runTests();
     }
+
     public static int calcUpgrade(String state, int speed) {
         int upgrade = 0;
 
@@ -33,6 +34,7 @@ public class InternetUpgrade {
         
         return upgrade;
     }
+    
     public static void printUpgrade(int upgrade) {
         if(upgrade == 0){
             System.out.println("User does not get a free upgrade.");
@@ -49,4 +51,4 @@ public class InternetUpgrade {
         printUpgrade(calcUpgrade("MO", 10));
         printUpgrade(calcUpgrade("MO", 20));
     }
-}
+}  

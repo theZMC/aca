@@ -2,6 +2,10 @@ package com.aca;
 
 public class ArrayUtils {
     public static void main(String[] args) {
+        runTests();
+    }
+
+    private static void runTests() {
         int[] array = new int[10];
 
         array[0] = 11;

@@ -44,7 +44,8 @@ public class VendingMachine {
     // allows the customer to pick item 0 to 4
     private static int getCustomerPick(Scanner scanner) {
         boolean waiting = true;
-        int pick = 0;
+        int     pick    = 0;
+
         while(waiting){
             System.out.println("\nPick an item from 0 to 4.");
 

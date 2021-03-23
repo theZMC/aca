@@ -13,6 +13,8 @@ public class VendingMachine {
         Scanner scanner = new Scanner(System.in);
         int     pick;
 
+        System.out.println();
+
         // the program should keep accepting new requests for product forever
         while(true){
 

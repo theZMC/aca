@@ -1,13 +1,12 @@
 package com.aca;
 
 import java.time.LocalDate;
-import java.time.Period;
 
 public class EmployeeTest {
     public static void main(String[] args) {
         Employee[] employees = {
             new Employee("dan", "Lazenby", LocalDate.of(1967,3,23), LocalDate.now()),
-            new Employee("Zach", "callahan", LocalDate.of(1990,3,23), LocalDate.of(1981,3,23)),
+            new Employee("Zach", "callahan", LocalDate.of(1990,9,3), LocalDate.of(1981,3,23)),
             new Employee("alison", "wish", LocalDate.of(1969,3,23), LocalDate.now())        
         };
         
@@ -25,10 +24,8 @@ public class EmployeeTest {
         int[]   tenuredIndexes  = new int[employees.length];
         int     numOfTenured    = 0;
 
-        // Loop to figure out how many employees match the condition and who they are.
         for(int i = 0; i < employees.length; i++){
-            Period interval = Period.between(employees[i].getHireDate(),LocalDate.now());
-            if(interval.getYears() >= tenureThreshold){
+            if(employees[i].hasTenured(tenureThreshold)){
                 tenuredIndexes[i] = i;
                 numOfTenured++;
             } else {
@@ -36,13 +33,11 @@ public class EmployeeTest {
             }
         }
 
-        // Now that we know how many there are, we can build our output array.
         Employee[] out = new Employee[numOfTenured];
         
         if(numOfTenured > 0){
             int outIndex = 0;
 
-            // Loop to build our output array.
             for(int i = 0; i < employees.length; i++){
                 if(tenuredIndexes[i] == i){
                     out[outIndex] = employees[i];
@@ -59,8 +54,7 @@ public class EmployeeTest {
         int     numOfBdaysToday = 0;
 
         for(int i = 0; i < employees.length; i++){
-            Period interval = Period.between(employees[i].getBirthday(), LocalDate.now());
-            if(interval.getDays() == 0 && interval.getMonths() == 0){
+            if(employees[i].wasBornToday()){
                 bDayIndexes[i] = i;
                 numOfBdaysToday++;
             } else {

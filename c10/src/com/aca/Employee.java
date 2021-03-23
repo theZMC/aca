@@ -1,6 +1,7 @@
 package com.aca;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Employee extends Object{
     private String      firstName;
@@ -28,12 +29,21 @@ public class Employee extends Object{
         return firstName + " " + lastName;
     }
 
+    public boolean hasTenured(int tenureThreshold){
+        Period interval = Period.between(this.hireDate, LocalDate.now());
+        return interval.getYears() >= tenureThreshold;
+    }
+
+    public boolean wasBornToday() {
+        Period interval = Period.between(this.birthday, LocalDate.now());
+        return interval.getDays() == 0 && interval.getMonths() == 0;
+    }
+
     @Override
     public String toString(){
         String format = "Name: %s\tBirthday: %s\tHire Date: %s";
         return String.format(format, getFullName(), getBirthday(), getHireDate());
     }
-
     public String getFirstName() {
         return firstName;
     }

@@ -10,7 +10,13 @@ public class ObjectTest {
             new Teacher("Professor",            "Benjamin", "Hunnicutt",    true)
         };
 
+        Department[] departments = {
+            new Department("Department of Surgery", 10, teachers[1]),
+            new Department("Department of Nursing", 6, teachers[2])
+        };
+
         printTeachers(teachers);
+        printDepartments(departments);
     }
 
     private static void printTeachers(Teacher[] teachers) {
@@ -19,6 +25,15 @@ public class ObjectTest {
         System.out.println((char)27 + "[4m" + header + (char)27 + "[0m");
         for(Teacher teacher : teachers) {
             System.out.println(teacher);
+        }
+        System.out.println();
+    }
+    private static void printDepartments(Department[] departments) {
+        String header = String.format(Department.getStringFormat(), "Department Name", "Majors", "Department Head");
+        System.out.println();
+        System.out.println((char)27 + "[4m" + header + (char)27 + "[0m");
+        for(Department department : departments) {
+            System.out.println(department);
         }
         System.out.println();
     }

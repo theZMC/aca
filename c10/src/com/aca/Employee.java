@@ -9,6 +9,8 @@ public class Employee{
     private LocalDate   birthday;
     private LocalDate   hireDate;
 
+    private static String outputFormat = "%-20s %12s %12s";
+
     public Employee(String firstName, String lastName, LocalDate birthday, LocalDate hireDate){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -19,12 +21,13 @@ public class Employee{
     public String getFullName() {
         String first    = firstName.toLowerCase();
         String last     = lastName.toLowerCase();
+        
         first = first.length() > 0 ? 
-            first.substring(0,1).toUpperCase() + first.substring(1) : 
-            "";
+            first.substring(0,1).toUpperCase() + first.substring(1) : "";
+
         last = last.length() > 0 ? 
-            last.substring(0,1).toUpperCase() + last.substring(1) : 
-            "";
+            last.substring(0,1).toUpperCase() + last.substring(1) : "";
+
         return first + " " + last;
     }
 
@@ -39,8 +42,7 @@ public class Employee{
     }
 
     public String toString(){
-        String format = "%s %s %s";
-        return String.format(format, getFullName(), getBirthday(), getHireDate());
+        return String.format(outputFormat, getFullName(), getBirthday(), getHireDate());
     }
 
     public String toString(String format){
@@ -58,5 +60,8 @@ public class Employee{
     }
     public LocalDate getHireDate() {
         return hireDate;
+    }
+    public static String getOutputFormat() {
+        return outputFormat;
     }
 }

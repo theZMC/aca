@@ -10,60 +10,60 @@ public class GreatestGame {
     }
 
     private static void runGame(int randomLowBound, int randomHighBound, int maxGuesses) {
-        Scanner scanner     = new Scanner(System.in);       // make one scanner and use it over and over again
-        String  name        = getPlayerName(scanner);       // get the player's name. only need to do this once.
+        Scanner scanner     = new Scanner(System.in);
+        String  name        = getPlayerName(scanner);
 
-        boolean isCorrect   = false;                        // by default, the player has not guessed correctly
-        boolean isPlaying   = true;                         // by default, the player is playing the game
-        boolean isGameOver  = false;                        // by default, the game is not over
+        boolean isCorrect   = false;
+        boolean isPlaying   = true;
+        boolean isGameOver  = false;
 
-        int     winGuessCount   = 0;                        // the total number of guesses for won games
-        int     guessCount      = 0;                        // the total number of guesses for the current game
-        int     gameCount       = 0;                        // the total number of games that have been played
-        int     winCount        = 0;                        // the total number of games that have been won
+        int     winGuessCount   = 0;
+        int     guessCount      = 0;
+        int     gameCount       = 0;
+        int     winCount        = 0;
 
-        int random = getRandBetween(randomLowBound, randomHighBound);  // generate the first random number to guess
+        int random = getRandBetween(randomLowBound, randomHighBound);
 
-        while(isPlaying){                                                           // while the player wants to play...
-            int guess = getPlayerGuess(scanner, randomLowBound, randomHighBound);   // get the guess from the player
-            guessCount++;                                                           // increment the guess counter
-            isCorrect = (guess == random);                                          // check if the player won
+        while(isPlaying){
+            int guess = getPlayerGuess(scanner, randomLowBound, randomHighBound);
+            guessCount++;
+            isCorrect = (guess == random);
 
-            if(isCorrect){                                                          // if the player is correct...
-                printPlayerWon(name, guessCount);                                   // tell the player they won
-                isPlaying = askStillPlaying(scanner);                               // ask if the player wants to play again
-                winGuessCount += guessCount;                                        // add the guess count to the winning guess total
-                guessCount = 0;                                                     // reset the guess count
-                gameCount++;                                                        // increment the total game count
-                winCount++;                                                         // increment the win count
-                random = getRandBetween(randomLowBound, randomHighBound);           // generate a new random number
-                printGameHistory(gameCount, winCount, winGuessCount);               // print the game history
+            if(isCorrect){
+                printPlayerWon(name, guessCount);
+                isPlaying = askStillPlaying(scanner);
+                winGuessCount += guessCount;
+                guessCount = 0;
+                gameCount++;
+                winCount++;
+                random = getRandBetween(randomLowBound, randomHighBound);
+                printGameHistory(gameCount, winCount, winGuessCount);
 
-            } else {                                                                // if the player is not correct...
-                printGuessHighLow(guess, random);                                   // tell the player if they're high or low
+            } else {
+                printGuessHighLow(guess, random);
             }
 
-            isGameOver = (guessCount == maxGuesses);                                // check if game over state has been reached
+            isGameOver = (guessCount == maxGuesses);
 
-            if(isGameOver){                                                         // if the player used all their guesses...
-                printPlayerLost(name, guessCount);                                  // tell the player they lost
-                isPlaying = askStillPlaying(scanner);                               // ask if they want to play agian
-                guessCount = 0;                                                     // reset the guess count
-                gameCount++;                                                        // increment the total game count
-                random = getRandBetween(randomLowBound, randomHighBound);           // generate a new random number
-                printGameHistory(gameCount, winCount, winGuessCount);               // print the game history
+            if(isGameOver){
+                printPlayerLost(name, guessCount);
+                isPlaying = askStillPlaying(scanner);
+                guessCount = 0;
+                gameCount++;
+                random = getRandBetween(randomLowBound, randomHighBound);
+                printGameHistory(gameCount, winCount, winGuessCount);
             }
         }
 
-        scanner.close();                                    // close our scanner since we're done.                                     
+        scanner.close();
     }
 
     private static void printGameHistory(int gameCount, int winCount, int winGuessCount) {
-        int lossCount = gameCount - winCount;                           // the number of losses is the total games minus the wins
-        int avgGuess = 0;                                               // default to 0 guesses in case there are no wins.
-        if(winCount != 0){                                              // if the player has won a game...
-            avgGuess = winGuessCount / winCount;                        // the average guess is the total guesses in winning games
-        }                                                               // divided by the wins
+        int lossCount = gameCount - winCount;
+        int avgGuess = 0;
+        if(winCount != 0){
+            avgGuess = winGuessCount / winCount;
+        }
 
         System.out.println("\n  HISTORICAL GAME SUMMARY");
         System.out.println(  "---------------------------");

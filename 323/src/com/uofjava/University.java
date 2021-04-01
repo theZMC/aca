@@ -12,7 +12,7 @@ public class University {
     public static void printDepartments(Department[] departments) {
         String header = String.format(Department.getStringFormat(), "Department Name", "Majors", "Department Head");
         System.out.println();
-        System.out.println((char)27 + "[4m" + header + (char)27 + "[0m");
+        System.out.println(underline(header));
         for(Department department : departments) {
             System.out.println(department);
         }
@@ -22,13 +22,16 @@ public class University {
     public static void printTeachers(Teacher[] teachers) {
         String header = String.format(Teacher.getStringFormat(), "Title", "Full Name", "Tenure Status");
         System.out.println();
-        System.out.println((char)27 + "[4m" + header + (char)27 + "[0m");
+        System.out.println(underline(header));
         for(Teacher teacher : teachers) {
             System.out.println(teacher);
         }
         System.out.println();
     }
-    
+
+    private static String underline(String underlineThis){
+        return (char)27 + "[4m" + underlineThis + (char)27 + "[0m";
+    }
     public String getName() {
         return name;
     }

@@ -21,11 +21,11 @@ public class Employee{
     public String getFullName() {
         String first    = firstName.toLowerCase();
         String last     = lastName.toLowerCase();
-        
-        first = first.length() > 0 ? 
+
+        first = first.length() > 0 ?
             first.substring(0,1).toUpperCase() + first.substring(1) : "";
 
-        last = last.length() > 0 ? 
+        last = last.length() > 0 ?
             last.substring(0,1).toUpperCase() + last.substring(1) : "";
 
         return first + " " + last;
@@ -36,8 +36,8 @@ public class Employee{
         return interval.getYears() >= tenureThreshold;
     }
 
-    public boolean wasBornToday() {
-        Period interval = Period.between(this.birthday, LocalDate.now());
+    public boolean wasBornToday(LocalDate day) {
+        Period interval = Period.between(this.birthday, day);
         return interval.getDays() == 0 && interval.getMonths() == 0;
     }
 

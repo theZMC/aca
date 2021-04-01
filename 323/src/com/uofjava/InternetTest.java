@@ -15,12 +15,17 @@ public class InternetTest {
     }
 
     private static void printInternets(Internet[] internets) {
-        String header = String.format(Internet.getStringFormat(), "Product ID", "Speed Up", "Speed Down", "Start Date", "End Date");
-        
+        String header = String.format(
+            Internet.getStringFormat(),
+            "Product ID", "Speed Up",
+            "Speed Down", "Start Date",
+            "End Date"
+        );
+
         System.out.println();
         System.out.println((char)27 + "[4m" + header + (char)27 + "[0m");
         for(Internet internet : internets) {
             System.out.println(internet);
-        }       
+        }
     }
 }

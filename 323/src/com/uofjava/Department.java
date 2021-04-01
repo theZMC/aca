@@ -5,10 +5,10 @@ public class Department {
     private int     numberOfMajors;
     private Teacher departmentHead;
 
-    private static String stringFormat = "%24s %12s %20s";
+    private static final String stringFormat = "%24s%24s%24s";
 
     public Department(String name, int numberOfMajors, Teacher departmentHead){
-        this.name = name;
+        this.name           = name;
         this.numberOfMajors = numberOfMajors;
         this.departmentHead = departmentHead;
     }

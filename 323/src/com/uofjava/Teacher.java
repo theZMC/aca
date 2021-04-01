@@ -6,7 +6,7 @@ public class Teacher {
     private String  lastName;
     private boolean isTenured;
 
-    private static String stringFormat = "%20s %20s %20s";
+    private static String stringFormat = "%24s%24s%24s";
 
     public Teacher(String title, String firstName, String lastName, boolean isTenured) {
         this.title      = title;

@@ -2,7 +2,7 @@ package com.uofjava;
 
 import java.time.LocalDate;
 
-public class Internet {
+public class Internet extends Object{
     private static String stringFormat = "%-10s %12s %12s %12s %12s";
     private static String speedFormat  = "%4dMb/s";
 
@@ -11,7 +11,7 @@ public class Internet {
     private int         downloadSpeed;
     private LocalDate   startDate;
     private LocalDate   endDate;
-    
+
 
     public Internet(String productId, int uploadSpeed, int downloadSpeed, LocalDate startDate, LocalDate endDate){
         this.productId      = productId;
@@ -21,6 +21,7 @@ public class Internet {
         this.endDate        = endDate;
     }
 
+    @Override
     public String toString() {
         String uploadSpeedString = String.format(speedFormat, uploadSpeed);
         String downloadSpeedString = String.format(speedFormat, downloadSpeed);

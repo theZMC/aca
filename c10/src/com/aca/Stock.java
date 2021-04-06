@@ -1,7 +1,10 @@
 package com.aca;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 public class Stock {
     private String          name;
@@ -61,7 +64,8 @@ public class Stock {
     }
 
     public static void main(String[] args) {
-        Stock tesla = new Stock("Tesla Inc.", "TSLA", 476.40d, 57_096_724);
-        System.out.println(tesla);
+        // Stock tesla = new Stock("Tesla Inc.", "TSLA", 476.40d, 57_096_724);
+        // System.out.println(tesla);
+
     }
 }

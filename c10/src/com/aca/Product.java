@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class Product {
     private String      name;
-    private int         quantityInStock = 0;
+    private int         quantityInStock;
     private LocalDate   createDate;
     private BigDecimal  unitPrice;
 
@@ -29,7 +29,7 @@ public class Product {
     }
 
     public BigDecimal getTotalUnitValue(){
-        return unitPrice.multiply(new BigDecimal(quantityInStock));
+        return unitPrice.multiply(new BigDecimal(quantityInStock)).setScale(2, RoundingMode.DOWN);
     }
 
     @Override

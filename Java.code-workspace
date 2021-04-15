@@ -1,40 +1,684 @@
 {
-	"folders": [
-		{
-			"path": "c1"
-		},
-		{
-			"path": "c2"
-		},
-		{
-			"path": "c3"
-		},
-		{
-			"path": "c4"
-		},
-		{
-			"path": "c5"
-		},
-		{
-			"path": "c6"
-		},
-		{
-			"path": "c7"
-		},
-		{
-			"path": "c8"
-		},
-		{
-			"path": "c10"
-		},
-		{
-			"path": "323"
-		},
-		{
-			"path": "c11"
-		}
-	],
-	"settings": {
-		"java.dependency.syncWithFolderExplorer": false
-	}
+    "folders": [
+        {
+            "path": "c1"
+        },
+        {
+            "path": "c2"
+        },
+        {
+            "path": "c3"
+        },
+        {
+            "path": "c4"
+        },
+        {
+            "path": "c5"
+        },
+        {
+            "path": "c6"
+        },
+        {
+            "path": "c7"
+        },
+        {
+            "path": "c8"
+        },
+        {
+            "path": "c10"
+        },
+        {
+            "path": "323"
+        },
+        {
+            "path": "c11"
+        },
+        {
+            "path": "list1"
+        }
+    ],
+    "settings": {
+        "java.dependency.syncWithFolderExplorer": false
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "java",
+                "name": "Launch Current File",
+                "request": "launch",
+                "mainClass": "${file}"
+            },
+            {
+                "type": "java",
+                "name": "Launch InternetTest",
+                "request": "launch",
+                "mainClass": "com.uofjava.InternetTest",
+                "projectName": "323_c1777b38"
+            },
+            {
+                "type": "java",
+                "name": "Launch ObjectTest",
+                "request": "launch",
+                "mainClass": "com.uofjava.ObjectTest",
+                "projectName": "323_c1777b38"
+            },
+            {
+                "type": "java",
+                "name": "Launch App",
+                "request": "launch",
+                "mainClass": "App",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch DateTest",
+                "request": "launch",
+                "mainClass": "com.aca.DateTest",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch EmployeeTest",
+                "request": "launch",
+                "mainClass": "com.aca.EmployeeTest",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch LocalDateTest",
+                "request": "launch",
+                "mainClass": "com.aca.LocalDateTest",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch LocalDateTimeTest",
+                "request": "launch",
+                "mainClass": "com.aca.LocalDateTimeTest",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch LocalTimeTest",
+                "request": "launch",
+                "mainClass": "com.aca.LocalTimeTest",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch PlayerTest",
+                "request": "launch",
+                "mainClass": "com.aca.PlayerTest",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch ProductTest",
+                "request": "launch",
+                "mainClass": "com.aca.ProductTest",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch Stock",
+                "request": "launch",
+                "mainClass": "com.aca.Stock",
+                "projectName": "c10_c1782f46"
+            },
+            {
+                "type": "java",
+                "name": "Launch App(1)",
+                "request": "launch",
+                "mainClass": "App",
+                "projectName": "c11_c1782f47"
+            },
+            {
+                "type": "java",
+                "name": "Launch Constants",
+                "request": "launch",
+                "mainClass": "com.aca.Constants",
+                "projectName": "c1"
+            },
+            {
+                "type": "java",
+                "name": "Launch DataTypes",
+                "request": "launch",
+                "mainClass": "com.aca.DataTypes",
+                "projectName": "c1"
+            },
+            {
+                "type": "java",
+                "name": "Launch FirstVariable",
+                "request": "launch",
+                "mainClass": "com.aca.FirstVariable",
+                "projectName": "c1"
+            },
+            {
+                "type": "java",
+                "name": "Launch Hello",
+                "request": "launch",
+                "mainClass": "com.aca.Hello",
+                "projectName": "c1"
+            },
+            {
+                "type": "java",
+                "name": "Launch Arithmetic",
+                "request": "launch",
+                "mainClass": "com.aca.Arithmetic",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Assignment",
+                "request": "launch",
+                "mainClass": "com.aca.Assignment",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Comparison",
+                "request": "launch",
+                "mainClass": "com.aca.Comparison",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Condition",
+                "request": "launch",
+                "mainClass": "com.aca.Condition",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Date",
+                "request": "launch",
+                "mainClass": "com.aca.Date",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch DoubleByZero",
+                "request": "launch",
+                "mainClass": "com.aca.DoubleByZero",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Escape",
+                "request": "launch",
+                "mainClass": "com.aca.Escape",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch HousePrice",
+                "request": "launch",
+                "mainClass": "com.aca.HousePrice",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch IntByZero",
+                "request": "launch",
+                "mainClass": "com.aca.IntByZero",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch IntExtremes",
+                "request": "launch",
+                "mainClass": "com.aca.IntExtremes",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Logic",
+                "request": "launch",
+                "mainClass": "com.aca.Logic",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch LoveJava",
+                "request": "launch",
+                "mainClass": "com.aca.LoveJava",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch MyReport",
+                "request": "launch",
+                "mainClass": "com.aca.MyReport",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Precedence",
+                "request": "launch",
+                "mainClass": "com.aca.Precedence",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch TestScore",
+                "request": "launch",
+                "mainClass": "com.aca.TestScore",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Time",
+                "request": "launch",
+                "mainClass": "com.aca.Time",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Withdrawal",
+                "request": "launch",
+                "mainClass": "com.aca.Withdrawal",
+                "projectName": "c2_79da962b"
+            },
+            {
+                "type": "java",
+                "name": "Launch Average",
+                "request": "launch",
+                "mainClass": "com.aca.Average",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch Cast",
+                "request": "launch",
+                "mainClass": "com.aca.Cast",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch CastOperations",
+                "request": "launch",
+                "mainClass": "com.aca.CastOperations",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch Celsius",
+                "request": "launch",
+                "mainClass": "com.aca.Celsius",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch ConvertInches",
+                "request": "launch",
+                "mainClass": "com.aca.ConvertInches",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch ConvertSeconds",
+                "request": "launch",
+                "mainClass": "com.aca.ConvertSeconds",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch Display",
+                "request": "launch",
+                "mainClass": "com.aca.Display",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch Echo",
+                "request": "launch",
+                "mainClass": "com.aca.Echo",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch Exercise1",
+                "request": "launch",
+                "mainClass": "com.aca.Exercise1",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch GuessStarter",
+                "request": "launch",
+                "mainClass": "com.aca.GuessStarter",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch ScannerBug",
+                "request": "launch",
+                "mainClass": "com.aca.ScannerBug",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch TestStudent",
+                "request": "launch",
+                "mainClass": "com.aca.TestStudent",
+                "projectName": "c3_79da962c"
+            },
+            {
+                "type": "java",
+                "name": "Launch App(2)",
+                "request": "launch",
+                "mainClass": "App",
+                "projectName": "c4_79da962d"
+            },
+            {
+                "type": "java",
+                "name": "Launch BigMethodSignature",
+                "request": "launch",
+                "mainClass": "com.aca.BigMethodSignature",
+                "projectName": "c4_79da962d"
+            },
+            {
+                "type": "java",
+                "name": "Launch MathUtil",
+                "request": "launch",
+                "mainClass": "com.aca.MathUtil",
+                "projectName": "c4_79da962d"
+            },
+            {
+                "type": "java",
+                "name": "Launch NewLine",
+                "request": "launch",
+                "mainClass": "com.aca.NewLine",
+                "projectName": "c4_79da962d"
+            },
+            {
+                "type": "java",
+                "name": "Launch PrintTime",
+                "request": "launch",
+                "mainClass": "com.aca.PrintTime",
+                "projectName": "c4_79da962d"
+            },
+            {
+                "type": "java",
+                "name": "Launch PrintTwice",
+                "request": "launch",
+                "mainClass": "com.aca.PrintTwice",
+                "projectName": "c4_79da962d"
+            },
+            {
+                "type": "java",
+                "name": "Launch SimpleMethods",
+                "request": "launch",
+                "mainClass": "com.aca.SimpleMethods",
+                "projectName": "c4_79da962d"
+            },
+            {
+                "type": "java",
+                "name": "Launch Chaining",
+                "request": "launch",
+                "mainClass": "com.aca.Chaining",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch CheesePricer",
+                "request": "launch",
+                "mainClass": "com.aca.CheesePricer",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch CountDown",
+                "request": "launch",
+                "mainClass": "com.aca.CountDown",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch CountMe",
+                "request": "launch",
+                "mainClass": "com.aca.CountMe",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch CountUp",
+                "request": "launch",
+                "mainClass": "com.aca.CountUp",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch DoWhile",
+                "request": "launch",
+                "mainClass": "com.aca.DoWhile",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch Else",
+                "request": "launch",
+                "mainClass": "com.aca.Else",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch EvenOrOdd",
+                "request": "launch",
+                "mainClass": "com.aca.EvenOrOdd",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch For",
+                "request": "launch",
+                "mainClass": "com.aca.For",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch If",
+                "request": "launch",
+                "mainClass": "com.aca.If",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch InputSum",
+                "request": "launch",
+                "mainClass": "com.aca.InputSum",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch LogicMethods",
+                "request": "launch",
+                "mainClass": "com.aca.LogicMethods",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch Switch",
+                "request": "launch",
+                "mainClass": "com.aca.Switch",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch SwitchTest",
+                "request": "launch",
+                "mainClass": "com.aca.SwitchTest",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch TicketNumber",
+                "request": "launch",
+                "mainClass": "com.aca.TicketNumber",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch ValidateNumber",
+                "request": "launch",
+                "mainClass": "com.aca.ValidateNumber",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch While",
+                "request": "launch",
+                "mainClass": "com.aca.While",
+                "projectName": "c5_79da962e"
+            },
+            {
+                "type": "java",
+                "name": "Launch CoffeeDiscount",
+                "request": "launch",
+                "mainClass": "com.aca.CoffeeDiscount",
+                "projectName": "c6_79da962f"
+            },
+            {
+                "type": "java",
+                "name": "Launch ForStatement",
+                "request": "launch",
+                "mainClass": "com.aca.ForStatement",
+                "projectName": "c6_79da962f"
+            },
+            {
+                "type": "java",
+                "name": "Launch InternetUpgrade",
+                "request": "launch",
+                "mainClass": "com.aca.InternetUpgrade",
+                "projectName": "c6_79da962f"
+            },
+            {
+                "type": "java",
+                "name": "Launch MathUtil(1)",
+                "request": "launch",
+                "mainClass": "com.aca.MathUtil",
+                "projectName": "c6_79da962f"
+            },
+            {
+                "type": "java",
+                "name": "Launch NestedLoop",
+                "request": "launch",
+                "mainClass": "com.aca.NestedLoop",
+                "projectName": "c6_79da962f"
+            },
+            {
+                "type": "java",
+                "name": "Launch WhileLoop",
+                "request": "launch",
+                "mainClass": "com.aca.WhileLoop",
+                "projectName": "c6_79da962f"
+            },
+            {
+                "type": "java",
+                "name": "Launch Array",
+                "request": "launch",
+                "mainClass": "com.aca.Array",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch ArrayUtils",
+                "request": "launch",
+                "mainClass": "com.aca.ArrayUtils",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch CustomerPlay",
+                "request": "launch",
+                "mainClass": "com.aca.CustomerPlay",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch DisplayNames",
+                "request": "launch",
+                "mainClass": "com.aca.DisplayNames",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch GenerateRandomArray",
+                "request": "launch",
+                "mainClass": "com.aca.GenerateRandomArray",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch GreatestGame",
+                "request": "launch",
+                "mainClass": "com.aca.GreatestGame",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch PetList",
+                "request": "launch",
+                "mainClass": "com.aca.PetList",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch Recursion",
+                "request": "launch",
+                "mainClass": "com.aca.Recursion",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch StudentProcessing",
+                "request": "launch",
+                "mainClass": "com.aca.StudentProcessing",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch SwitchExample",
+                "request": "launch",
+                "mainClass": "com.aca.SwitchExample",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch VendingMachine",
+                "request": "launch",
+                "mainClass": "com.aca.VendingMachine",
+                "projectName": "c7_79da9630"
+            },
+            {
+                "type": "java",
+                "name": "Launch App(3)",
+                "request": "launch",
+                "mainClass": "App",
+                "projectName": "c8_79da9631"
+            },
+            {
+                "type": "java",
+                "name": "Launch ImmutableExample",
+                "request": "launch",
+                "mainClass": "com.aca.ImmutableExample",
+                "projectName": "c8_79da9631"
+            },
+            {
+                "type": "java",
+                "name": "Launch App(4)",
+                "request": "launch",
+                "mainClass": "App",
+                "projectName": "list1_44c2c7d7"
+            },
+            {
+                "type": "java",
+                "name": "Launch ListLearn",
+                "request": "launch",
+                "mainClass": "com.aca.ListLearn",
+                "projectName": "list1_44c2c7d7"
+            }
+        ]
+    }
 }
